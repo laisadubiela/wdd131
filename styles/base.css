@@ -92,6 +92,13 @@ footer {
   font-weight: 400;
   color: #423F40;
   display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer p {
+    margin: 1px;
+    text-align: center;
 }
 
 a {
