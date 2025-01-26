@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Maria Laísa</title>
+    <meta name="description" content="WDD 131 - Dinamic Web Fundamentals - Maria Laísa Santana Freitas Dubiela, place page">
+    <meta name="author" content="Maria Laísa">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="stylesheet" href="styles/place-small.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Brazil</h1>
+    </header>
+    <picture>
+        <source srcset="images/brazil-medium.webp" media="(min-width: 550px)">
+        <img src="images/brazil-small.webp" alt="Brazil" width="300" height="400">
+    </picture>
+    <div class="box1">
+        <div class = "box2-1">
+            <h2>Data</h2>
+            <div class="weather">
+                <img class="none" src="images/weather.svg" alt="Sun">
+            </div>
+        </div>
+        <div>
+            <p><strong>Area:</strong> 8.510.000 sq km</p>
+            <p><strong>Population:</strong> 216,400,000</p>
+            <p><strong>Capital:</strong> Brazilia</p>
+            <p><strong>Languages:</strong> Português</p>
+            <p><strong>Currency:</strong> Real</p>
+            <p><strong>Time Zone:</strong> UTC+3</p>
+            <p><strong>Calling Code:</strong> +55</p>
+            <p><strong>Internet TLD:</strong> .br</p>
+        </div>
+    </div>
+    <div class = "box2">
+        <div class = "box2-1">
+            <h2>Weather</h2>
+            <div class="weather">
+                <img src="images/weather.svg" alt="Sun">
+            </div>
+        </div>
+            <div>
+                <p><strong>Temperature: </strong><span><span id="temperature">25</span>°C</span></p>
+                <p><strong>Conditions: </strong> Sunny</p>
+                <p><strong>Wind: </strong><span><span id="windSpeed">2</span>km/h</span></p>
+                <p><strong>Wind Chill: </strong><span><span id="windChill"></span>ºC</span></p>
+            </div>
+    </div>
+    <footer>
+        <p>© <span id="currentyear"></span> ✨ Maria Laísa Santana Freitas Dubiela 📍 Brazil </p> 
+        <p><span id="lastModified"></span> </p>
+    </footer>
+</body>
+</html>
