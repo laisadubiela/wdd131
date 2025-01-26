@@ -63,4 +63,11 @@
     .none {
         opacity: 0;
     }
+
+    .weather-div h2::after {
+        content: url('images/sunny.svg');
+        width: 65px;
+        height: 65px;
+        margin-left: 10px;
+      }
 }
