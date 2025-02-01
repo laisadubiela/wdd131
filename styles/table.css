@@ -1,0 +1,49 @@
+:root {
+    --purple: rgb(94, 38, 115);
+    --lightpurple: hsla(280, 67%, 73%, 0.5);
+    --foredark: rgba(204, 171, 210, 0.527);
+    --forelight: hsla(0, 0%, 100%, 1);
+    --border: hsla(0, 0%, 20%, .8);
+    --borderlight: hsla(0, 0%, 33%, .3);
+}
+
+body {
+    font-family: "EB Garamond", Arial, serif;
+}
+
+table {
+    margin: 10px auto;
+    border: thin solid var(--border);
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: var(--purple);
+    font-size: .85rem;
+}
+
+tr:first-child th {
+    background-color: var(--purple);
+    color: var(--forelight);
+}
+
+th,
+td {
+    padding: 7px 15px;
+    border: 1px solid var(--borderlight);
+}
+
+th,
+.column {
+    background-color: var(--lightpurple);
+    font-size: larger;
+}
+
+td {
+    text-align: center;
+}
+
+.column {
+    background-color: var(--lightpurple);
+}

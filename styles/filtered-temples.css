@@ -1,0 +1,137 @@
+body {
+    font-family: "Gabarito", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #bfd2d8;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #423F40;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #0f073c;
+}
+
+h3 {
+    font-size: 1.17em;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+header {
+    font-size: 1em;
+    font-weight: 400;
+    color: #423F40;
+}
+
+header h1 {
+    background-color: #09478d;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header h2 {
+    color: #09478d;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    font-size: 30px;
+    color: #09478d;
+    display: none;
+    flex-direction: column;
+    background-color: #c3daf588;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+main {
+    font-size: 1em;
+    font-weight: 400;
+    color: #423F40;
+    display: grid;
+    padding: 10px;
+    max-width: 800px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+footer {
+    font-size: 1em;
+    font-weight: 400;
+    color: #423F40;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer p {
+    margin: 1px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #09478d;
+}
+
+nav a:hover {
+    text-decoration: overline;
+    background-color: aliceblue;
+    padding: 5px;
+}
+
+div {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+p {
+    padding: 10px;
+}
+
+img {
+    border: 1px solid #09478d;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #0f1447;
+    width: 80%;
+    height: auto;
+    margin-bottom: 50px;
+    max-width: 300px; 
+    max-height: 200px; 
+}
+
+figcaption {
+    font-size: 0.8em;
+    font-style: italic;
+    text-align: center;
+    padding: 10px;
+}
+
+button {
+    display: block;
+    font-size: 2em;
+    background-color: #bfd2d8;
+    border: none;
+    cursor: pointer;
+}
+
+section {
+    background-color: #d1eaf2;
+    width: 300px;
+    border: 1px solid darkblue;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #423F40;
+    margin-bottom: 20px;
+}
