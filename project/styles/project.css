@@ -1,0 +1,78 @@
+.space-mono-regular {
+    font-family: "Space Mono", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .space-mono-bold {
+    font-family: "Space Mono", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .space-mono-regular-italic {
+    font-family: "Space Mono", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .space-mono-bold-italic {
+    font-family: "Space Mono", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .dm-serif-text-regular {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .dm-serif-text-regular-italic {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  h1 {
+    font-family: "Space Mono", serif;
+    font-weight: 700;
+    font-style: normal;
+    color:  #101010;
+  }
+
+  h2 {
+    color: #f9cc00;
+    background-color: #101010;
+  }
+
+  h3 {
+    color: #3f3f3f;
+  }
+
+  body {
+    font-family: "DM Serif Text", serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff;
+    color: #3f3f3f;
+    text-align: center;
+    padding: 1em;
+
+}
+
+nav {
+    background-color: #f9cc00;
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+p {
+  color: #3f3f3f;
+}
