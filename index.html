@@ -1,61 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Maria Laísa</title>
-    <meta name="description" content="WDD 131 - Dinamic Web Fundamentals - Maria Laísa Santana Freitas Dubiela, main page">
-    <meta name="author" content="Maria Laísa">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/base.css">
-    <script src="scripts/getdates.js" defer></script>
+    <meta charset="utf-8">
+    <meta name="description" content="Fill Me In">
+    <meta name="author" content="John Doe">
+
+    <!-- This start file was build by Paul Cheney  -->
+    <title>HTML5 Start Site by Paul Cheney</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+
+
+
 </head>
+
 <body>
+    <!-- HEADER HERE -->
     <header>
-        <h1>WDD 131: Dynamic Web Fundamentals - Maria Laísa Santana Freitas Dubiela</h1>
-        <nav>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/maria-la%C3%ADsa-santana-freitas-dubiela/">Linkedin</a></li>
-                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng&id=p37#p37">Scripture</a></li>
-                <li><a href="finalproject.html">Final Project</a></li>
-            </ul>
-        </nav>
+        <h1>Course Proposal</h1>
+        <h2>Designing Web Forms</h2>
     </header>
+
+
+    <!-- NAVIGATION HERE -->
+    <nav>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li class="active"><a href="#">Propose</a></li>
+            <li><a href="#">Winners</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- CONTENT HERE -->
     <main>
-        <section class="card">
-            <h2>About Me</h2>
-            <div>
-                <p>My name is Maria Laísa Santana Freitas Dubiela. I am from Brazil and I live with my family in São Paulo. I am a student at BYU and I am current working as a civil engineer. I am excited to learn more about web development. I love to study, to travel and spend time with my family.</p>
-                <img class="img1" src="images/me.jpg" alt="Maria Laísa" width="150" height="200">
-            </div>
-            <h3>Santos, São Paulo</h3>
-            <div>
-                <img class="img2" src="images/santos.jpg" alt="Santos, São Paulo" width="250" height="200">
-                <p>Santos is a coastal city in the state of São Paulo, Brazil. It is known for its large beach garden, which is the largest in the world, and its coffee museum. Santos is also the city where the soccer player Pelé was born.</p>
-            </div>
-        </section>
-        <section class="card">
-            <h2>Web Dev Resources</h2>
-            <nav>
-                <ul>
-                    <li><a href="https://dev.to/">Dev.to Community</a></li>
-                    <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
-                    <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
-                    <li><a href="https://placehold.co/">Image Placeholder</a></li>
-                    <li><a href="https://squoosh.app/">Squoosh</a></li>
-                    <li><a href="https://app.contrast-finder.org/?lang=en">Contrast Finder</a></li>
-                    <li><a href="https://github.com/laisadubiela">GitHub</a></li>
-                </ul>
-            </nav>
-        </section>
+        <h1>Course Proposal Application</h1>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label>First Name*<input type="text" name="fname" required></label>
+                <label>Last Name*<input type="text" name="lname" required></label>
+                <label>Phone<input type="tel" name="phone" placeholder="12345678"></label>
+                <label>Email<input type="email" name="email" placeholder="yourname@hotmail.com"></label>
+                <label>Website<input type="url" name="url" placeholder="http://"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Course Information</legend>
+                <div>Audience</div>
+                <label><input type="radio" name="audience" value="beginner">Beginner</label>
+                <label><input type="radio" name="audience" value="intermediate">Intermediate</label>
+                <label><input type="radio" name="audience" value="advanced">Advanced</label>
+
+                <div>
+                    <label><input type="checkbox" name="editing" value="yes">Photo Editing</label>
+                    <label><input type="checkbox" name="code" value="yes">Coding</label>
+                    <label><input type="checkbox" name="process" value="yes">Preprocessor</label>
+                    <label><input type="checkbox" name="client" value="yes">FTP Client</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Funding</legend>
+                <label>Anticipated Complletion Date <input type="date" name="completeDate"></label>
+                <label>Course Subject
+                    <select name="subject">
+                        <option value="">Please Select</option>
+                        <option value="software">Software Development</option>
+                        <option value="creative">Creative Professional</option>
+                        <option value="info">Information Technology</option>
+                        <option value="software">Software Development</option>
+                    </select>
+                </label>
+                <label>
+                    How many Authors <input type="number" name="authors">
+                </label>
+                <input tybe="submit" value="Propose my course">
+            </fieldset>
+        </form>
+
+
+
     </main>
+
+    <!-- FOOTER HERE -->
     <footer>
-        <p>© <span id="currentyear"></span> ✨ Maria Laísa Santana Freitas Dubiela 📍 São Paulo / Brazil 🏖 </p> 
-        <p><span id="lastModified"></span> </p>
+        &copy; 2024 &bull; Paul Cheney &bull; 123-555-6789
     </footer>
-    
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>
