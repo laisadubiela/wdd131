@@ -1,7 +1,43 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(252, 251, 224);
+}   
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #9e690e;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #9e690e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
 input[type="radio"] {
 	display: none;
 	position: relative;
 	caret-color: rgba(0, 0, 0, 0);
+
 }
 
 .stars {
