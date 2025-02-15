@@ -44,16 +44,19 @@
   h2 {
     color: #f9cc00;
     background-color: #101010;
+    margin: 10px;
+    padding: 10px;
   }
 
   h3 {
-    color: #3f3f3f;
+    color: #101010;
   }
 
   body {
     font-family: "DM Serif Text", serif;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 header {
@@ -70,9 +73,86 @@ nav {
     padding: 1em;
     display: flex;
     justify-content: space-around;
-    
+    font-size: 20px;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
 }
 
 p {
+  color: #000000;
+  padding: 10px;
+  margin: 10px;
+}
+
+label {
   color: #3f3f3f;
+  display: block;
+}
+
+footer {
+    border-top: solid 3px #f9cc00;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    padding: 1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 20px;
+    color: #101010;
+    padding: 10px;
+}
+
+input {
+  background-color:  #f5e498;
+  height: 25px;
+  margin-top: -15px;
+}
+
+textarea {
+  background-color: #f5e498;
+  margin-top: -15px;
+}
+
+button {
+  color: #000000;
+  background-color: #f9cc00;
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 15px;
+}
+
+.h1header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.box {
+  background-color: #b9b9b9;
+  padding: 10px;
+
+}
+
+.lazy {
+  animation: fade 3s;
+}
+
+@keyframes fade {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
 }
